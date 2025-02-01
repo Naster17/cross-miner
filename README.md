@@ -45,7 +45,11 @@ git clone https://github.com/Naster17/cross-miner/
 cd cross-miner/
 make OPENSSL=/path/to/openssl-1.1.1k CC=aarch64-linux-gnu-gcc
 ```
-
+#### Mine
+```bash
+./cpuminer username key
+./cpuminer qwerty 1234
+```
 
 ### Tested 
 - DiskStation DS211j - arm v5l (DSM 6.2.4-25556)
