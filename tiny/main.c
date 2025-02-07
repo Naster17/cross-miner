@@ -41,7 +41,7 @@ int main(int argc, char *argv[]) {
   printf("Platform: ARM64\n");
 #endif
 #else
-  print_info("Compiled for other\n")
+  printf("Compiled for other\n");
 #endif
 
   printf("\n");
@@ -170,7 +170,9 @@ int main(int argc, char *argv[]) {
     // printf("JOB:  %s\n", job);
     // printf("JOB2: %s\n", work);
     // printf("DIFF: %s\n", diff);
-    printf("\e[1;36m[net]\e[0m \e[1;35mreceived new job ...\e[0m diff: \e[1;37m%s\e[0m", diff);
+    printf("\e[1;36m[net]\e[0m \e[1;35mreceived new job ...\e[0m diff: "
+           "\e[1;37m%s\e[0m",
+           diff);
     char *ducos1_result_string = malloc(16);
     start = clock(); // Начало замера времени
     // memset(ducos1_result_string, 0x0, 16);
